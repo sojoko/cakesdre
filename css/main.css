@@ -131,6 +131,7 @@ body {
   width: 100%;
   font-size: 20px;
   background-color: #FFFFFF;
+  transition: color 0.4s;
 }
 
 .secondary-button:hover {
@@ -151,19 +152,117 @@ body {
   }
 }
 @media (max-width: 640px) {
-  .login .form-container {
+  .login .form-container-create-account {
     display: flex;
     height: 100%;
   }
-  .login .form-container .form {
+  .login .form-container-create-account .form-login {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .login .form-container .form .cab-container {
+  .login .form-container-create-account .form-login .cab-container {
     margin-bottom: 28px;
   }
+}
+.main-container .cards-container {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fill, 300px);
+  place-content: center;
+  margin-top: 32px;
+}
+.main-container .cards-container .product-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px #FFDBAA;
+}
+.main-container .cards-container .product-card {
+  width: 300px;
+  border: 4px solid #FBA1B7;
+  border-radius: 12px;
+  transition: all 0.5s;
+}
+.main-container .cards-container .product-card img {
+  width: 292px;
+  border-radius: 6px;
+}
+.main-container .cards-container .product-card .icon-container-add-card {
+  width: 54px;
+}
+.main-container .cards-container .product-card .icon-container-add-card img {
+  width: 54px;
+  object-fit: cover;
+}
+.main-container .cards-container .product-card .product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+.main-container .cards-container .product-card .product-info div p:nth-child(1) {
+  color: #FBA1B7;
+  margin-bottom: -8px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.main-container .cards-container .product-card .product-info div p:nth-child(2) {
+  color: grey;
+}
+
+@media (max-width: 640px) {
+  .main-container .cards-container {
+    display: grid;
+    gap: 2.5%;
+    grid-template-columns: repeat(auto-fill, 180px);
+  }
+  .main-container .cards-container .product-card {
+    width: 180px;
+    border: 3px solid #FBA1B7;
+    border-radius: 12px;
+  }
+  .main-container .cards-container .product-card img {
+    width: 174px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  .main-container .cards-container .product-card .icon-container-add-card {
+    width: 34px;
+  }
+  .main-container .cards-container .product-card .icon-container-add-card img {
+    width: 34px;
+  }
+  .main-container .cards-container .product-card .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+  }
+  .main-container .cards-container .product-card .product-info div p:nth-child(1) {
+    color: #FBA1B7;
+    margin-bottom: -8px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .main-container .cards-container .product-card .product-info div p:nth-child(2) {
+    color: grey;
+    font-size: 12px;
+  }
+}
+header {
+  margin-bottom: 40px;
+}
+header .navbar .container-fluid .collapse {
+  margin-left: 40px !important;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
+  color: #FBA1B7 !important;
+  font-size: 20px !important;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item a:hover {
+  -webkit-text-stroke: 0.5px #FFDBAA !important;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+header {
+  margin-bottom: 40px;
+  .navbar {
+
+    .container-fluid {
+      .collapse {
+        margin-left: 40px !important;
+
+        .navbar-nav {
+          .nav-item {
+            a {
+              color: $pink-principal !important;
+              font-size: $md !important;
+              font-weight: bold;
+              transition: color 0.5s;
+            }
+
+            a:hover {
+              -webkit-text-stroke: 0.5px $yelow-complementary !important;
+
+
+            }
+          }
+
+
+        }
+
+      }
+    }
+  }
+}
